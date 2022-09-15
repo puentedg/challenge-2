@@ -14,7 +14,9 @@ body {
     background-repeat: no-repeat;
     background-position:top;
     background-size: contain;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
     padding: 0 120px;
@@ -101,7 +103,7 @@ a:hover {
 }
 .card-container {
     display: flex;
-    flex-direction:row;
+    flex-direction:column;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: auto;
@@ -116,6 +118,7 @@ a:hover {
 p {
     font-size: 30px;
     width: 70%;
+    text-align: center;
 }
 .card-container h2 + p{
     margin-top: 50px;
@@ -231,7 +234,7 @@ p {
     height: 100px;
     width: 250px;
     display: inline-block;
-    font-size: 17px5;
+    font-size: 17px;
     text-align: center;
     background-color: white; 
 }
