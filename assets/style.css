@@ -1,0 +1,362 @@
+* {
+    margin: 0px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+}
+/* Header */
+.header-container {
+    height:100vh;
+    width: 100vw;
+    background-color: rgb(255, 255, 120);
+    background-image: url('./Screen\ Shot\ 2022-09-14\ at\ 11.08.59\ PM.png');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: contain;
+    display:flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 0 120px;
+    position: relative;
+}
+header {
+    display:inline-block;
+    width: 100%;
+}
+
+h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+h2 { 
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.social-media {
+    margin-top: 1rem;
+    display: flex; 
+}
+/* Linkedin and Github */
+.social-media a {
+    color:black;
+    text-decoration: none;
+    padding: 1rem 4rem;
+    border: 1px solid black;
+    min-width: 4rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+/* Linkedin and Github when hover */
+a:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Menu
+.checkbox-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox {
+    height: 100px;
+    width: 100px;
+    position:absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 9999;
+    transition: 400ms ease-in-out 0s;
+}
+
+.checkbox .trace {
+    width: 50px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    border-radius: 4px;
+    transition: 0.5 ease-in-out;
+}
+
+.checkbox .trace:nth-child(1) {
+    top: 25px;
+    transform: rotate(0);
+}
+.checkbox .trace:nth-child(2) {
+    top: 45px;
+    transform: rotate(0);
+}
+.checkbox .trace:nth-child(3) {
+    top: 65px;
+    transform: rotate(0);
+}
+
+#toggle {
+    display: none;
+} */
+/* Menu shape */
+/* .menu {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background-color: transparent;
+    height: 4px;
+    width: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 0px white;
+    z-index:-1;
+    transition: 400ms ease-in-out 0s;
+} */
+/* Menu items */
+.menu-items {
+    position:relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    margin-bottom: 300px;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    z-index: 2;
+    /* opacity: 0; */
+    /* visibility: hidden; */
+    transition: 400ms ease-in-out 0s;
+}
+
+.menu-items ul {
+    list-style-type: none;
+}
+
+.menu-items ul li a {
+    /* margin:10px 0; */
+    color:black;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 35px;
+}
+
+.menu-items ul li a:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Menu animation X
+#toggle:checked + .checkbox .trace:nth-child(1) {
+   transform:rotate(45deg);
+   top: 45px; 
+}
+#toggle:checked + .checkbox .trace:nth-child(2) {
+    transform:translate(-100px);
+    width: 30px; 
+    visibility: hidden;
+    opacity: 0;
+ }
+
+ #toggle:checked + .checkbox .trace:nth-child(3) {
+    transform:rotate(-45deg);
+    top: 45px; 
+ }
+
+ #toggle:checked + .checkbox {
+    background-color: white;
+ }
+ #toggled:checked ~ .menu {
+    box-shadow: 0px 0px 0px 100vmax white;
+    z-index: 1;
+ }
+ #toggle:checked ~ .menu-items {
+    visibility: visible;
+    opacity: 1;
+ } */
+.container {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 3rem 0;;
+}
+.card-container {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    width: 90%;
+}
+
+.card-container h2 {
+    font-size: 40px;
+    text-align: left;
+}
+p {
+    font-size: 30px;
+    width: 70%;
+}
+.card-container h2 + p{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.card {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    margin: 3rem 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    background-color:  rgb(255, 255, 120) ;
+    background-image: url('./Screen\ Shot\ 2022-09-14\ at\ 11.08.59\ PM.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(0.5);
+    color: black;
+    cursor: pointer;
+    transition:0.5s ease-in-out;
+}
+
+.img-click {
+    background: none;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    background-color:  rgb(255, 255, 120);
+    background-image: url('./_Users_puentedg_bootcamp_bootcamp-AS_challenge-1_Module-1-challenge_index.html.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(0.5);
+    color: black;
+    cursor: pointer;
+    transition:0.5s ease-in-out;
+}
+
+.img-click h3 {
+    color:white;
+    text-decoration: none;
+}
+
+/* .card-text {
+    width: 40%;
+    letter-spacing: 1px;
+    color:black
+} */
+
+.card-wrapper {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card-wrapper::before {
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: block;
+    border: 1px solid white;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.card-wrapper h3 {
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    transition: 0.5 ease-in-out;
+}
+
+.card:hover {
+    filter:unset;
+
+}
+.card:hover > .card-wrapper::before{
+    height: 200px;
+    width: 200px;
+    opacity:1;
+}
+#contact-form {
+    text-align: center;
+    width: 350px;
+    padding: 5px;
+    border: 10px solid  rgb(255, 255, 120);
+    font-size: 20px;
+    background-color: white;
+    margin: auto;
+}
+
+#message {
+    box-sizing: border-box;
+    height: 100px;
+    display: inline-block;
+    margin-right: 15px;
+
+}
+.input {
+    box-sizing: border-box;
+    height: 100px;
+    width: 250px;
+    display: inline-block;
+    font-size: 17px5;
+    text-align: center;
+    background-color: white; 
+}
+
+.form {
+    width: 100%;
+    display: block;
+    margin-top: 50px;
+
+}
+div button {
+    height: 30px;
+    width: 130px;
+    margin: 3px;
+    margin-left: 50px;
+    justify-content: right;
+    background-color: black;
+    color: white;
+    
+  }
+.text-center {
+    text-align: center;
+    color: black;
+    margin: 0;
+
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color:  rgb(255, 255, 120);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
