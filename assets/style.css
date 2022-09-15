@@ -14,12 +14,9 @@ body {
     background-repeat: no-repeat;
     background-position:top;
     background-size: contain;
-    /* display:flex;
-    flex-direction: column;  */
     display: inline-block;
     justify-content: center;
     align-items: flex-start;
-    /* box-sizing: border-box; */
     padding: 0 120px;
     position: relative;
 }
@@ -60,68 +57,9 @@ a:hover {
     color: white;
 }
 
-/* Menu
-.checkbox-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.checkbox {
-    height: 100px;
-    width: 100px;
-    position:absolute;
-    right: 0;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
-    z-index: 9999;
-    transition: 400ms ease-in-out 0s;
-}
-
-.checkbox .trace {
-    width: 50px;
-    height: 2px;
-    background-color: black;
-    position: absolute;
-    border-radius: 4px;
-    transition: 0.5 ease-in-out;
-}
-
-.checkbox .trace:nth-child(1) {
-    top: 25px;
-    transform: rotate(0);
-}
-.checkbox .trace:nth-child(2) {
-    top: 45px;
-    transform: rotate(0);
-}
-.checkbox .trace:nth-child(3) {
-    top: 65px;
-    transform: rotate(0);
-}
-
-#toggle {
-    display: none;
-} */
-/* Menu shape */
-/* .menu {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    background-color: transparent;
-    height: 4px;
-    width: 10px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 0px 0px white;
-    z-index:-1;
-    transition: 400ms ease-in-out 0s;
-} */
 /* Menu items */
-nav {
-    margin-left: 0px;
-}
+
 .menu-items {
     position:relative;
     top: 0;
@@ -133,9 +71,6 @@ nav {
     justify-content: left;
     flex-wrap: wrap;
     align-items: center;
-    /* z-index: 2; */
-    /* opacity: 0; */
-    /* visibility: hidden; */
     transition: 400ms ease-in-out 0s;
 }
 
@@ -144,7 +79,6 @@ nav {
 }
 
 .menu-items ul li a {
-    /* margin:10px 0; */
     color:black;
     text-decoration: none;
     text-transform: uppercase;
@@ -156,35 +90,7 @@ nav {
     background-color: black;
     color: white;
 }
-
-/* Menu animation X
-#toggle:checked + .checkbox .trace:nth-child(1) {
-   transform:rotate(45deg);
-   top: 45px; 
-}
-#toggle:checked + .checkbox .trace:nth-child(2) {
-    transform:translate(-100px);
-    width: 30px; 
-    visibility: hidden;
-    opacity: 0;
- }
-
- #toggle:checked + .checkbox .trace:nth-child(3) {
-    transform:rotate(-45deg);
-    top: 45px; 
- }
-
- #toggle:checked + .checkbox {
-    background-color: white;
- }
- #toggled:checked ~ .menu {
-    box-shadow: 0px 0px 0px 100vmax white;
-    z-index: 1;
- }
- #toggle:checked ~ .menu-items {
-    visibility: visible;
-    opacity: 1;
- } */
+/* Cards */
 .container {
     height: auto;
     width: 100%;
@@ -215,6 +121,8 @@ p {
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
+/* Project bubbles */
 .card-projects {
     display:flex;
     flex-wrap: wrap;
@@ -225,7 +133,6 @@ p {
     height: 250px;
     border-radius: 100%;
     margin: 30px 30px 30px 0px;
-    /* margin: 3rem 0 0 0; */
     display: flex;
     align-items: center;
     justify-content: center;    
@@ -239,7 +146,7 @@ p {
     cursor: pointer;
     transition:0.5s ease-in-out;
 }
-
+/*  */
 .img-click {
     background: none;
     width: 250px;
@@ -250,7 +157,7 @@ p {
     align-items: center;
     justify-content: center;    
     background-color:  rgb(255, 255, 120);
-    background-image: url('./_Users_puentedg_bootcamp_bootcamp-AS_challenge-1_Module-1-challenge_index.html.png');
+    background-image: url('_Users_puentedg_bootcamp_bootcamp-AS_challenge-1_Module-1-challenge_index.html.png');
     background-size: cover;
     background-repeat: no-repeat;
     filter: grayscale(0.5);
@@ -263,12 +170,6 @@ p {
     color:white;
     text-decoration: none;
 }
-
-/* .card-text {
-    width: 40%;
-    letter-spacing: 1px;
-    color:black
-} */
 
 .card-wrapper {
     text-align: center;
