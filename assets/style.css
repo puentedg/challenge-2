@@ -270,20 +270,21 @@ div button {
 }
 /* Tablets - header changes color */
 @media screen and (max-width: 992px){
-    header, main {
+    header, nav, main {
         flex-direction: column;
       }
     }
 
 @media screen and (max-width: 768px) {
-    header, main {
+    header, nav, main {
       flex-direction: column;
     }
   }
 
-  /* Small smartphones - image placeholders change color */
+  /* Small smartphones */
   @media screen and (max-width: 576px) {
-    header {
-      background-color: #4ea7ff;
+    header, nav, main {
+      flex-direction: column;
+      justify-content: center;
     }
   }
