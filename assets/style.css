@@ -49,6 +49,7 @@ h2 {
     border: 1px solid black;
     min-width: 4rem;
     display:flex;
+    font-size: 20px;
     align-items: center;
     justify-content: center;
     transition: .5s ease-in-out;
@@ -96,8 +97,9 @@ a:hover {
 .container {
     height: auto;
     width: 100%;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
+    flex: 1 1 100%;
     justify-content: space-evenly;
     margin: 3rem 0;
 }
@@ -176,9 +178,9 @@ p {
 
 .card-wrapper {
     text-align: center;
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: row; */
     justify-content: center;
     align-items: center;
     position: relative;
@@ -270,24 +272,55 @@ div button {
     align-items: center;
     justify-content: center;
     color: black;
+    font-size: 15px;
 }
 /* Tablets - header changes color */
 @media screen and (max-width: 992px){
     header, nav, main {
-        flex-direction: column;
+        flex:1 1 200px;
+        margin: 40px 20px;
+        min-width: 500px;
       }
     }
 
 @media screen and (max-width: 768px) {
-    header, nav, main {
-      flex-direction: column;
-    }
+    .header-container, .card-container, .card-projects{
+        flex-direction: column;
+        justify-content: center;
+      }
+      a {
+          flex-direction: column;
+          text-align:center;
+      }
+        
   }
 
   /* Small smartphones */
   @media screen and (max-width: 576px) {
-    header, nav, main {
-      flex-direction: column;
-      justify-content: center;
+      
+    .header-container {
+        width: 100%;
+        height: 100%;
+        flex-wrap: nowrap;
+
     }
-  }
+    .card-container, .card-projects{
+        display: flex;  
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        flex:1 1 200px;
+        margin: 20px;
+        min-width: 400px;
+        max-width: 500px;
+      }
+
+      .social-media a  {
+          flex-direction: column;
+          text-align:center;
+          flex-wrap: nowrap;
+          width: 100%;
+      }
+    }
+  
