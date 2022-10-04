@@ -10,7 +10,7 @@ body {
     height:100vh;
     width: 100vw;
     background-color: rgb(255, 255, 120);
-    background-image: url('./Screen\ Shot\ 2022-09-14\ at\ 11.08.59\ PM.png');
+    background-image: url('./images/Screen\ Shot\ 2022-09-14\ at\ 11.08.59\ PM.png');
     background-repeat: no-repeat;
     background-position:top;
     background-size: contain;
@@ -97,7 +97,6 @@ a:hover {
 .container {
     height: auto;
     width: 100%;
-    /* display: flex; */
     flex-direction: column;
     flex: 1 1 100%;
     justify-content: space-evenly;
@@ -105,7 +104,7 @@ a:hover {
 }
 .card-container {
     display: flex;
-    flex-direction:column;
+    flex-direction:row;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: auto;
@@ -142,7 +141,7 @@ p {
     align-items: center;
     justify-content: center;    
     background-color:  rgb(255, 255, 120) ;
-    background-image: url('./Screen\ Shot\ 2022-09-14\ at\ 11.08.59\ PM.png');
+    background-image: url('./images/Screen\ Shot\ 2022-09-14\ at\ 11.08.59\ PM.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -151,36 +150,9 @@ p {
     cursor: pointer;
     transition:0.5s ease-in-out;
 }
-/*  */
-.img-click {
-    background: none;
-    width: 250px;
-    height: 250px;
-    margin: 30px 30px 30px 0px;
-    border-radius: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;    
-    background-color:  rgb(255, 255, 120);
-    background-image: url('./Horison.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    filter: grayscale(0.5);
-    color: black;
-    cursor: pointer;
-    transition:0.5s ease-in-out;
-}
-
-.img-click h3 {
-    color:white;
-    text-decoration: none;
-}
 
 .card-wrapper {
     text-align: center;
-    /* display: flex;
-    flex-wrap: wrap;
-    flex-direction: row; */
     justify-content: center;
     align-items: center;
     position: relative;
@@ -207,6 +179,8 @@ p {
 
 .card:hover {
     filter:unset;
+    display: inline-block;
+
 
 }
 .card:hover > .card-wrapper::before{
