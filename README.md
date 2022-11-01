@@ -5,7 +5,7 @@
 
 - 🌱 I’m currently learning **HTML, CSS and JavaScript**
 
-- 👨‍💻 All of my projects are available at [https://puentedg.github.io/challenge-2/](https://puentedg.github.io/portfolio/)
+- 👨‍💻 All of my projects are available at [https://puentedg.github.io/portfolio](https://puentedg.github.io/portfolio/)
 
 - 💬 Ask me about **future projects**
 
